@@ -138,7 +138,13 @@ gameScene.gameOver = function() {
   if (bestScore < score) {bestScore = score};
 
   bestScoreText = this.add.text(250, 200, 'BEST SCORE:'+ bestScore, { fontSize: '40px', fill: '#FFF' });
-
+if (score < 4) { this.add.text(250, 500, 'Ну ты и лох!', { fontSize: '40px', fill: '#FFF' }); };
+if (score < 8 && score > 3) { this.add.text(300, 500, 'Алкаш!', { fontSize: '40px', fill: '#FFF' }); };
+if (score < 12 && score > 9) { this.add.text(300, 500, 'Ничё!', { fontSize: '40px', fill: '#FFF' }); };
+if (score < 20 && score > 11) { this.add.text(300, 500, 'Норм!', { fontSize: '40px', fill: '#FFF' }); };
+if (score > 29) { this.add.text(300, 500, 'Бог!', { fontSize: '40px', fill: '#FFF' }); };
+if (score < 30 && score > 19) { this.add.text(300, 500, 'Ну ты ваще!', { fontSize: '40px', fill: '#FFF' }); };
+if (score < 10 && score > 7) { this.add.text(100, 500, 'Пользуясь случаем, передаю привет Илье!', { fontSize: '40px', fill: '#FFF' }); };
 // гейм овер экран
   this.add.sprite(400, 300, 'go')
 
