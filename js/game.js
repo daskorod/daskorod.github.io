@@ -122,7 +122,7 @@ bird.angle += 1;};
   timer = timer + 1;}
 
 // генерация труб каждый 120 единиц, если живы и игра началась, обновление очков, добавление очков с каждой трубы
-  if (timer == 120 && this.isPlayerAlive == true && startg == false) { score += 1;
+  if (timer == 60 && this.isPlayerAlive == true && startg == false) { score += 1;
   scoreText.setText('Score: ' + score); timer = 0; addRowOfPipes();  }
 
   
