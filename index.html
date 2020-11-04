@@ -26,13 +26,13 @@
       var buildUrl = "Build";
       var loaderUrl = buildUrl + "/daskorod.github.io.loader.js";
       var config = {
-        dataUrl: buildUrl + "/daskorod.github.io.data.gz",
-        frameworkUrl: buildUrl + "/daskorod.github.io.framework.js.gz",
-        codeUrl: buildUrl + "/daskorod.github.io.wasm.gz",
+        dataUrl: buildUrl + "/daskorod.github.io.data.br",
+        frameworkUrl: buildUrl + "/daskorod.github.io.framework.js.br",
+        codeUrl: buildUrl + "/daskorod.github.io.wasm.br",
         streamingAssetsUrl: "StreamingAssets",
-        companyName: "Russia_my_history_NN",
+        companyName: "com",
         productName: "20alive",
-        productVersion: "0.1",
+        productVersion: "1.0",
       };
 
       var container = document.querySelector("#unity-container");
@@ -45,7 +45,7 @@
         container.className = "unity-mobile";
         config.devicePixelRatio = 1;
       } else {
-        canvas.style.width = "800px";
+        canvas.style.width = "960px";
         canvas.style.height = "600px";
       }
       loadingBar.style.display = "block";
